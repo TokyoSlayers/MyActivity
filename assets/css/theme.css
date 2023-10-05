@@ -73,7 +73,7 @@ body{
     transition: all .15s ease;
 }
 
-.nav-list__item span:hover {
+.nav-list__item:hover {
     opacity: 1;
     transform: translateX(0);
     color: #7a4a9f;
