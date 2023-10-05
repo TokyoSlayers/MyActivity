@@ -57,7 +57,7 @@ body{
 }
 
 .nav-list__item .circle{
-    background-color: #b695de;
+    background-color: #bd88ea;
 }
 
 .nav-list__item .circle i{
@@ -73,7 +73,7 @@ body{
     transition: all .15s ease;
 }
 
-.nav-list__item:hover {
+.nav-list__item a:hover>span  {
     opacity: 1;
     transform: translateX(0);
     color: #7a4a9f;
