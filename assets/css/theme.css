@@ -34,6 +34,52 @@ body{
     justify-content: center;
     border-bottom: 3px solid #F2F2F2;
 }
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    vertical-align: center;
+}
+
+.sidebar__nav-list{
+    list-style-type: none;
+    background-color: gray;
+    box-shadow: 0 2px 5px darkgray;
+    border-radius: 0 100% 100% 0;
+    padding: 2rem 1rem 2rem 0;
+}
+.nav-list__item {
+    margin: 1rem 1rem 0 1rem;
+    width: 4rem;
+}
+
+.nav-list__item .circle{
+    background-color: #b695de;
+}
+
+.nav-list__item .circle i{
+    color: #7a4a9f;
+}
+
+
+.sidebar__nav-list span {
+    opacity: 0;
+    flex-basis: 100%;
+    padding-top: .25rem;
+    transform: translateX(-200px);
+    transition: all .15s ease;
+}
+
+.nav-list__item span:hover {
+    opacity: 1;
+    transform: translateX(0);
+    color: #7a4a9f;
+    font-weight: bold;
+}
+
 header{
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +106,7 @@ header{
 main{
     margin: auto;
     width: 95%;
+    padding-top: 70px;
 }
 
 p{
@@ -285,8 +332,9 @@ footer ul li a:hover {
 /*tablette*/
 @media (min-width:760px) and (max-width:1024px){
     header{
-        margin-left: 2rem;
-        margin-right: 2rem;
+        position: fixed;
+        width: 100%;
+        background: rgba(255,255,255,0.51);
     }
     #project{
         width: 10%;
@@ -339,8 +387,9 @@ footer ul li a:hover {
 /*desktop*/
 @media (min-width: 1025px){
     header{
-        margin-left: 2rem;
-        margin-right: 2rem;
+        position: fixed;
+        width: 100%;
+        background: rgba(255,255,255,0.51);
     }
     #project{
         width: 10%;
